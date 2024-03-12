@@ -1,0 +1,338 @@
+08-Mar-2024 15:50:43.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\APPS\Java
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\GIT\apache-tomcat-9.0.86
+08-Mar-2024 15:50:43.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\GIT\apache-tomcat-9.0.86
+08-Mar-2024 15:50:43.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2024 15:50:43.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2024 15:50:43.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\GIT\apache-tomcat-9.0.86\conf\logging.properties
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\GIT\apache-tomcat-9.0.86
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\GIT\apache-tomcat-9.0.86
+08-Mar-2024 15:50:43.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\GIT\apache-tomcat-9.0.86\temp
+08-Mar-2024 15:50:43.726 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [D:\APPS\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracle\install\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;D:\APPS\Git LFS;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\;C:\Users\ahmad\AppData\Local\Microsoft\WindowsApps;;C:\Users\ahmad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ahmad\Documents\PowerShell\Scripts;.]
+08-Mar-2024 15:50:44.037 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 15:50:44.089 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [606] milliseconds
+08-Mar-2024 15:50:44.171 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2024 15:50:44.172 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+08-Mar-2024 15:50:44.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\docs]
+08-Mar-2024 15:50:44.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\docs] has finished in [369] ms
+08-Mar-2024 15:50:44.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\examples]
+08-Mar-2024 15:50:44.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\examples] has finished in [288] ms
+08-Mar-2024 15:50:44.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\host-manager]
+08-Mar-2024 15:50:44.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\host-manager] has finished in [30] ms
+08-Mar-2024 15:50:44.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\manager]
+08-Mar-2024 15:50:44.893 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\manager] has finished in [21] ms
+08-Mar-2024 15:50:44.893 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\ROOT]
+08-Mar-2024 15:50:44.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\apache-tomcat-9.0.86\webapps\ROOT] has finished in [37] ms
+08-Mar-2024 15:50:44.934 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 15:50:45.002 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [912] milliseconds
+08-Mar-2024 15:53:15.159 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 15:53:15.165 WARNING [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 15:53:15.195 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [36] ms
+08-Mar-2024 15:53:15.199 INFO [http-nio-8080-exec-1] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W09 - 1-SampleFormProj]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:16:54.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\APPS\Java
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:16:54.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:16:54.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2024 17:16:54.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2024 17:16:54.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2024 17:16:54.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\logging.properties
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:16:54.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\temp
+08-Mar-2024 17:16:54.262 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [D:\APPS\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracle\install\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;D:\APPS\Git LFS;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\;C:\Users\ahmad\AppData\Local\Microsoft\WindowsApps;;C:\Users\ahmad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ahmad\Documents\PowerShell\Scripts;.]
+08-Mar-2024 17:16:54.555 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:16:54.590 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [487] milliseconds
+08-Mar-2024 17:16:54.631 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2024 17:16:54.631 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+08-Mar-2024 17:16:54.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:16:54.654 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:16:54.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [318] ms
+08-Mar-2024 17:16:54.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs]
+08-Mar-2024 17:16:54.977 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs] has finished in [23] ms
+08-Mar-2024 17:16:54.978 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples]
+08-Mar-2024 17:16:55.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples] has finished in [618] ms
+08-Mar-2024 17:16:55.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager]
+08-Mar-2024 17:16:55.639 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager] has finished in [43] ms
+08-Mar-2024 17:16:55.639 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager]
+08-Mar-2024 17:16:55.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager] has finished in [33] ms
+08-Mar-2024 17:16:55.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT]
+08-Mar-2024 17:16:55.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT] has finished in [14] ms
+08-Mar-2024 17:16:55.706 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:16:55.752 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1161] milliseconds
+08-Mar-2024 17:16:56.343 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/W09 - 1-SampleFormProj]
+08-Mar-2024 17:16:56.357 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:16:56.357 WARNING [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:16:56.377 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [20] ms
+08-Mar-2024 17:16:56.377 INFO [http-nio-8080-exec-8] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W09 - 1-SampleFormProj]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:17:07.687 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Mar-2024 17:17:07.687 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:17:07.704 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2024 17:17:07.715 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:17:07.727 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:18:24.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\APPS\Java
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:18:24.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\logging.properties
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\temp
+08-Mar-2024 17:18:24.506 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [D:\APPS\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracle\install\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;D:\APPS\Git LFS;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\;C:\Users\ahmad\AppData\Local\Microsoft\WindowsApps;;C:\Users\ahmad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ahmad\Documents\PowerShell\Scripts;.]
+08-Mar-2024 17:18:24.740 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:18:24.756 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [408] milliseconds
+08-Mar-2024 17:18:24.803 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2024 17:18:24.803 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+08-Mar-2024 17:18:24.803 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:18:24.818 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:18:25.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [250] ms
+08-Mar-2024 17:18:25.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs]
+08-Mar-2024 17:18:25.084 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs] has finished in [31] ms
+08-Mar-2024 17:18:25.084 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples]
+08-Mar-2024 17:18:25.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples] has finished in [250] ms
+08-Mar-2024 17:18:25.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager]
+08-Mar-2024 17:18:25.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager] has finished in [31] ms
+08-Mar-2024 17:18:25.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager]
+08-Mar-2024 17:18:25.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager] has finished in [16] ms
+08-Mar-2024 17:18:25.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT]
+08-Mar-2024 17:18:25.396 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT] has finished in [15] ms
+08-Mar-2024 17:18:25.396 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:18:25.443 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [686] milliseconds
+08-Mar-2024 17:18:33.200 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Mar-2024 17:18:33.202 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:18:33.208 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2024 17:18:33.225 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:18:33.234 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:21:11.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+08-Mar-2024 17:21:11.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\APPS\Java
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:21:11.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2024 17:21:11.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\logging.properties
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:21:11.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\temp
+08-Mar-2024 17:21:11.202 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [D:\APPS\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracle\install\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;D:\APPS\Git LFS;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\;C:\Users\ahmad\AppData\Local\Microsoft\WindowsApps;;C:\Users\ahmad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ahmad\Documents\PowerShell\Scripts;.]
+08-Mar-2024 17:21:11.427 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:21:11.445 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [406] milliseconds
+08-Mar-2024 17:21:11.482 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2024 17:21:11.483 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+08-Mar-2024 17:21:11.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:21:11.498 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:21:11.523 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:680)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1844)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:575)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:466)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:248)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@7fd7a283]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4575)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4708)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [D:\GIT\W09 - 1-SampleFormProj_(NetBeans project)\W09 - 1-SampleFormProj\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 41 more
+08-Mar-2024 17:21:11.567 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [78] ms
+08-Mar-2024 17:21:11.567 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs]
+08-Mar-2024 17:21:11.831 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs] has finished in [263] ms
+08-Mar-2024 17:21:11.831 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples]
+08-Mar-2024 17:21:12.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples] has finished in [249] ms
+08-Mar-2024 17:21:12.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager]
+08-Mar-2024 17:21:12.106 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager] has finished in [26] ms
+08-Mar-2024 17:21:12.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager]
+08-Mar-2024 17:21:12.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager] has finished in [23] ms
+08-Mar-2024 17:21:12.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT]
+08-Mar-2024 17:21:12.149 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT] has finished in [18] ms
+08-Mar-2024 17:21:12.154 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:21:12.196 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [750] milliseconds
+08-Mar-2024 17:21:12.250 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml]
+08-Mar-2024 17:21:12.267 WARNING [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - SampleFormProj_2] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml] has been ignored
+08-Mar-2024 17:21:12.299 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml] has finished in [49] ms
+08-Mar-2024 17:21:12.300 INFO [http-nio-8080-exec-3] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W09 - SampleFormProj_2]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:21:33.087 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/W09 - 1-SampleFormProj]
+08-Mar-2024 17:21:33.094 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:21:33.094 WARNING [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:21:33.124 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [30] ms
+08-Mar-2024 17:21:33.134 INFO [http-nio-8080-exec-4] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W09 - 1-SampleFormProj]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:21:57.495 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml]
+08-Mar-2024 17:21:57.499 WARNING [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - 3-StanPieda-BooksServlet] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has been ignored
+08-Mar-2024 17:21:57.521 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has finished in [26] ms
+08-Mar-2024 17:21:57.521 INFO [http-nio-8080-exec-11] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W10 - 3-StanPieda-BooksServlet]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:22:16.375 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml]
+08-Mar-2024 17:22:16.380 WARNING [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - 4-StanPieda-BooksServlet_2] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml] has been ignored
+08-Mar-2024 17:22:16.396 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml] has finished in [21] ms
+08-Mar-2024 17:22:16.413 INFO [http-nio-8080-exec-10] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W10 - 4-StanPieda-BooksServlet_2]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:22:56.051 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml]
+08-Mar-2024 17:22:56.051 WARNING [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - ShowSessionProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml] has been ignored
+08-Mar-2024 17:22:56.081 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml] has finished in [30] ms
+08-Mar-2024 17:22:56.081 INFO [http-nio-8080-exec-12] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W10 - ShowSessionProj]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:29:00.266 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Mar-2024 17:29:00.266 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:29:00.273 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2024 17:29:00.301 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:29:00.310 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:29:03.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\APPS\Java
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+8-LTS-224
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:29:03.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:29:03.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Mar-2024 17:29:03.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\logging.properties
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_shmem,address=tomcat_shared_memory_id,server=y,suspend=n
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86
+08-Mar-2024 17:29:03.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\temp
+08-Mar-2024 17:29:03.467 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [D:\APPS\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracle\install\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;D:\APPS\Git LFS;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ahmad\AppData\Local\Programs\Python\Python312\;C:\Users\ahmad\AppData\Local\Microsoft\WindowsApps;;C:\Users\ahmad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ahmad\Documents\PowerShell\Scripts;.]
+08-Mar-2024 17:29:03.699 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:29:03.717 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [409] milliseconds
+08-Mar-2024 17:29:03.755 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Mar-2024 17:29:03.755 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+08-Mar-2024 17:29:03.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml]
+08-Mar-2024 17:29:03.778 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - 1-SampleFormProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has been ignored
+08-Mar-2024 17:29:04.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - 1-SampleFormProj.xml] has finished in [285] ms
+08-Mar-2024 17:29:04.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml]
+08-Mar-2024 17:29:04.051 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W09 - SampleFormProj_2] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml] has been ignored
+08-Mar-2024 17:29:04.069 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W09 - SampleFormProj_2.xml] has finished in [19] ms
+08-Mar-2024 17:29:04.069 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml]
+08-Mar-2024 17:29:04.069 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - 3-StanPieda-BooksServlet] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has been ignored
+08-Mar-2024 17:29:04.108 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has finished in [39] ms
+08-Mar-2024 17:29:04.108 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml]
+08-Mar-2024 17:29:04.109 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - 4-StanPieda-BooksServlet_2] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml] has been ignored
+08-Mar-2024 17:29:04.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 4-StanPieda-BooksServlet_2.xml] has finished in [35] ms
+08-Mar-2024 17:29:04.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml]
+08-Mar-2024 17:29:04.144 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - ShowSessionProj] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml] has been ignored
+08-Mar-2024 17:29:04.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - ShowSessionProj.xml] has finished in [36] ms
+08-Mar-2024 17:29:04.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs]
+08-Mar-2024 17:29:04.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\docs] has finished in [19] ms
+08-Mar-2024 17:29:04.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples]
+08-Mar-2024 17:29:04.440 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\examples] has finished in [240] ms
+08-Mar-2024 17:29:04.440 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager]
+08-Mar-2024 17:29:04.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\host-manager] has finished in [31] ms
+08-Mar-2024 17:29:04.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager]
+08-Mar-2024 17:29:04.495 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\manager] has finished in [23] ms
+08-Mar-2024 17:29:04.495 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT]
+08-Mar-2024 17:29:04.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\webapps\ROOT] has finished in [4] ms
+08-Mar-2024 17:29:04.518 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:29:04.562 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [844] milliseconds
+08-Mar-2024 17:29:05.664 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/W10 - 3-StanPieda-BooksServlet]
+08-Mar-2024 17:29:05.679 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml]
+08-Mar-2024 17:29:05.684 WARNING [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/W10 - 3-StanPieda-BooksServlet] in deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has been ignored
+08-Mar-2024 17:29:05.718 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [D:\GIT\$services\netbeans_server\apache-tomcat-9.0.86\conf\Catalina\localhost\W10 - 3-StanPieda-BooksServlet.xml] has finished in [39] ms
+08-Mar-2024 17:29:05.722 INFO [http-nio-8080-exec-3] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/W10 - 3-StanPieda-BooksServlet]] after start() had already been called. The second call will be ignored.
+08-Mar-2024 17:30:18.396 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Mar-2024 17:30:18.397 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:30:18.407 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Mar-2024 17:30:18.431 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Mar-2024 17:30:18.445 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

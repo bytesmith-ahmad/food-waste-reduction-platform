@@ -1,0 +1,30 @@
+High Level Design due by march 18
+
+- NEED SCRIPT TO INITIATE DATABASE (.properties + sql-script?)
+- There are different types of users (store users and credentials in db)
+- Favor JSP over servlets for displaying data
+- Design Patterns: singleton for DB, DAO, DTO, factory for creating users
+
+FUNCTIONAL REQ
+
+users must be able to create and login accout
+
+RETAILERS
+
+identify tables here
+What determines if food is surplus or donation?
+
+If user requests more items than stock, decline request
+
+CONSUMERS
+
+...
+
+FOOD ALERT
+
+No need to send real email, simulate it:
+	keep table linking users to inbox and display on login, for example
+
+BONUS
+
+Encryption of passwords?

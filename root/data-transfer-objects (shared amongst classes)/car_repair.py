@@ -1,2 +1,0 @@
-class CarRepair:
-    pass
