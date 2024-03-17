@@ -1,0 +1,54 @@
+package models;
+
+public class User {
+    private int id;
+    private UserType userType;
+    private String name;
+    private String location;
+    private int phone;
+    private String email;
+    private String password;
+
+    // Constructor, getters, and setters
+}
+
+public class Item {
+    private int id;
+    private int retailId;
+    private String itemName;
+    private int quantity;
+    private Date expirationDate;
+    private boolean flagged;
+    private int discount;
+
+    // Constructor, getters, and setters
+}
+
+public class Login {
+    private int userId;
+    private String sessionToken;
+    private Timestamp loginTime;
+
+    // Constructor, getters, and setters
+}
+
+public class Subscription {
+    private int subscriptionId;
+    private int userId;
+    private String location;
+    private CommunicationMethod communicationMethod;
+    private String foodPreferences;
+
+    // Constructor, getters, and setters
+}
+
+public class Invoice {
+    private int id;
+    private int userId;
+    private int inventoryId;
+    private TransactionType transactionType;
+    private Timestamp transactionDate;
+    private int discountRate;
+
+    // Constructor, getters, and setters
+}

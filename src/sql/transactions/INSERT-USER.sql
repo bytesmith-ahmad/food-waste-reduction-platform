@@ -1,2 +1,4 @@
-INSERT INTO users (name, email, password, user_type)
-VALUES ('John Doe', 'john@example.com', 'password123', 'retailer');
+INSERT INTO users
+(name, location, user_type, email, password)
+VALUES
+(?,?,?,?,?);
