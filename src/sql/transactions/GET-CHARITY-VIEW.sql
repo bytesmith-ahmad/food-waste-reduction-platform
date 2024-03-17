@@ -2,6 +2,7 @@ WITH Params AS (
     SELECT ? AS loc
 )
 SELECT i.id AS item_id,
+       u.id   AS retailer_id,
        u.name AS retailer_name,
        i.item_name,
        CASE
