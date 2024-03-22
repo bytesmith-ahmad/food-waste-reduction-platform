@@ -1,0 +1,9 @@
+Navigate jsp's through href links
+
+jsp's are kept in /web*/views/authors.jsp
+
+for debugging, see Output > Apache Tomcat
+
+controller sends the requests to server
+
+sql jar file goes in /apache*/lib
