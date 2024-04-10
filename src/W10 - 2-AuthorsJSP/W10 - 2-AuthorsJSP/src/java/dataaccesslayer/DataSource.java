@@ -16,8 +16,8 @@ public class DataSource {
 
     private Connection connection = null;
     private String url = "jdbc:mysql://localhost:3306/books?useSSL=false&allowPublicKeyRetrieval=true";
-    private String username = "CST8288";
-    private String password = "CST8288";
+    private String username = "root";
+    private String password = "root";
 
     public DataSource() {
     }
