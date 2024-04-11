@@ -1,0 +1,59 @@
+CREATE DATABASE `fwrp` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `inventory` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `retail_id` int NOT NULL,
+  `item_name` varchar(255) NOT NULL,
+  `quantity` int NOT NULL,
+  `location` varchar(45) NOT NULL,
+  `expiration_date` date NOT NULL,
+  `flagged` tinyint(1) DEFAULT '0',
+  `discount` int DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `retail_id` (`retail_id`),
+  CONSTRAINT `inventory_ibfk_1` FOREIGN KEY (`retail_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `inventory_chk_1` CHECK (((`discount` >= 0) and (`discount` <= 100)))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `invoices` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `inventory_id` int NOT NULL,
+  `transaction_type` enum('purchase','donation') NOT NULL,
+  `transaction_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `discount_rate` int DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `inventory_id` (`inventory_id`),
+  CONSTRAINT `invoices_ibfk_2` FOREIGN KEY (`inventory_id`) REFERENCES `inventory` (`id`),
+  CONSTRAINT `users_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `invoices_chk_1` CHECK (((`discount_rate` >= 0) and (`discount_rate` <= 100)))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `logins` (
+  `user_id` int NOT NULL,
+  `session_token` varchar(255) NOT NULL,
+  `login_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`user_id`),
+  CONSTRAINT `logins_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `subscriptions` (
+  `user_id` int NOT NULL,
+  `item_id` int NOT NULL,
+  KEY `user_id` (`user_id`),
+  KEY `item_id` (`item_id`),
+  CONSTRAINT `subscriptions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `subscriptions_ibfk_2` FOREIGN KEY (`item_id`) REFERENCES `inventory` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_type` enum('retailer','consumer','charitable_organization') NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `phone` int NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
