@@ -54,15 +54,15 @@ public class Inventory {
         this.expirationDate = expirationDate;
     }
 
-    public boolean isFlagged() {
-        return this.flagged == 1;
+    public int getFlagged() {
+        return this.flagged;
     }
 
     public void setFlagged(int flagged_surplus) {
         this.flagged = flagged_surplus;
     }
 
-    public double getDiscount() {
+    public int getDiscount() {
         return discount;
     }
 
@@ -72,5 +72,9 @@ public class Inventory {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+    
+    public String getLocation(){
+        return this.location;
     }
 }

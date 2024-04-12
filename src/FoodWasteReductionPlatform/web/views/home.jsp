@@ -115,10 +115,10 @@
                                             <tr>
                                                 <th>Item</th>
                                                 <th>Quantity</th>
+                                                <th>Location</th>
                                                 <th>Expiration Date</th>
-                                                <th>Price</th>
                                                  <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
-                                                    <th>Discounted Price</th>
+                                                    <th>Discount (%)</th>
                                                  <% } %>
                                                  <% if (userType.equalsIgnoreCase("retailer")) { %>
                                                     <th>Flagged For Surplus</th>
@@ -148,27 +148,27 @@
                                                         <button type="button" class="btn btn-success btn-xs" onclick="showAddQuantityModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span></button>     
                                                     </span>
                                                 </td>
+                                                <td><%= item.getLocation()%></td>
                                                 <td class="<%= expiresInAweek ? "near-expiry-item" : "" %>"><%= item.getExpirationDate()%></td>
-                                                <td><%= item.getPrice()%></td>
-                                                 <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
-                                                    <td><%= item.getDiscount() !=0 ? item.getPrice() - item.getDiscount() : "" %></td>
-                                                 <% } %>
-                                                 <% if (userType.equalsIgnoreCase("retailer")) { %>
-                                                    <td><%= item.isFlagged() ? "Yes" : "" %></td>
-                                                    <td><%= item.isDonationFlag()? "Yes" : "" %></td>
-                                                 <% } %>
+                                                <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
+                                                    <td><%= item.getDiscount()%></td>
+                                                <% } %>
+                                                <% if (userType.equalsIgnoreCase("retailer")) { %>
+                                                    <td><%= item.getFlagged() == 1 ? "Yes" : "" %></td>
+                                                    <td><%= (item.getDiscount() == 100 && expiresInAweek) ? "Yes" : "" %></td>
+                                                <% } %>
                                                 <td>
-                                                    
                                                     <% if (userType.equalsIgnoreCase("retailer")) { %>
-                                                        <% if (!item.isFlagged()) { %>
-                                                        <button type="button" class="btn btn-info btn-xs" onclick="showMarkSurplusModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Mark as surplus</button>
-                                                        <% } else{ %>
-                                                        <button type="button" class="btn btn-warning btn-xs" onclick="showAddDiscountModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-usd"></span> Add Discount</button>
-                                                        <button type="button" class="btn btn-danger btn-xs" onclick="showAddDonationModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-flag"></span> Flag for Donation</button>
+                                                        <% if (item.getFlagged() != 1) { %>
+                                                            <button type="button" class="btn btn-info btn-xs" onclick="toggleFlag(<%= item.getId()%>, 1)">Mark as Surplus</button>
+                                                        <% } else { %>
+                                                            <button type="button" class="btn btn-warning btn-xs" onclick="toggleFlag(<%= item.getId()%>, 0)">Remove Surplus</button>
                                                         <% } %>
                                                     <% } else if (userType.equalsIgnoreCase("charitable_organization")) { %>
+                                                        <%-- If you need to show "Claim Item" action for charitable organizations --%>
                                                         <button type="button" class="btn btn-info btn-xs" onclick="showClaimDonationModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Claim Item</button>
-                                                    <% } else{ %>
+                                                    <% } else { %>
+                                                        <%-- If you need to show "Purchase Item" action for other user types --%>
                                                         <button type="button" class="btn btn-info btn-xs" onclick="showPurchaseItemModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Purchase Item</button>
                                                     <% }  %>
                                                 </td>

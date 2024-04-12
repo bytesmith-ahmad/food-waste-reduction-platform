@@ -18,10 +18,10 @@ public class InventoryDaoImpl {
             pstmt.setInt(1, item.getRetailId()); //?
             pstmt.setString(2, item.getItemName());
             pstmt.setInt(3, item.getQuantity());
-            pstmt.setString(4, "Not implemented");
+            pstmt.setString(4, item.getLocation());
             pstmt.setDate(5, new java.sql.Date(item.getExpirationDate().getTime()));
-            pstmt.setInt(6,0);
-            pstmt.setDouble(7, item.getPrice()); // Need refactor
+            pstmt.setInt(6, item.getFlagged());
+            pstmt.setInt(7, item.getDiscount()); // Need refactor
             pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -30,7 +30,7 @@ public class InventoryDaoImpl {
 
     public List<Inventory> getInventory() {
         List<Inventory> surplusItems = new ArrayList<>();
-        String sql = "SELECT * FROM inventory_view WHERE 1";
+        String sql = "SELECT * FROM inventory WHERE 1";
         try (Connection con = new DataSource().createConnection();
              PreparedStatement pstmt = con.prepareStatement(sql);
              ResultSet rs = pstmt.executeQuery()) {
@@ -40,11 +40,10 @@ public class InventoryDaoImpl {
                 item.setRetailId(rs.getInt("retail_id"));
                 item.setItemName(rs.getString("item_name"));
                 item.setQuantity(rs.getInt("quantity"));
+                item.setLocation(rs.getString("location"));
                 item.setExpirationDate(rs.getDate("expiration_date"));
-                item.setFlagged(rs.getBoolean("flagged_surplus"));
-                item.setDonationFlag(rs.getBoolean("flagged_donation"));
-                item.setPrice(rs.getDouble("price"));
-                item.setDiscount(rs.getDouble("applied_discount"));
+                item.setFlagged(rs.getInt("flagged"));
+                item.setDiscount(rs.getInt("discount"));
                 surplusItems.add(item);
             }
         } catch (SQLException e) {
@@ -89,11 +88,10 @@ public class InventoryDaoImpl {
                 item.setId(rs.getInt("id"));
                 item.setItemName(rs.getString("item_name"));
                 item.setQuantity(rs.getInt("quantity"));
+                item.setLocation(rs.getString("location")); //TODO
                 item.setExpirationDate(rs.getDate("expiration_date"));
-                item.setFlagged(rs.getBoolean("flagged_surplus"));
-                item.setDonationFlag(rs.getBoolean("flagged_donation"));
-                item.setPrice(rs.getDouble("price"));
-                item.setDiscount(rs.getDouble("applied_discount"));
+                item.setFlagged(rs.getInt("flagged"));
+                item.setDiscount(rs.getInt("discount"));
                 inventory.add(item);
             }
         } catch (SQLException e) {
