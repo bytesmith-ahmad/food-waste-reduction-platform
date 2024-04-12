@@ -340,12 +340,16 @@
                                                     <input type="number" class="form-control" name="quantity" placeholder="Quantity" required>
                                                 </div>
                                                 <div class="form-group">
+                                                    <label for="location">Location</label>
+                                                    <input type="text" class="form-control" name="location" placeholder="Location" required>
+                                                </div>
+                                                <div class="form-group">
                                                     <label for="expirationDate">Expiration Date</label>
                                                     <input type="date" class="form-control" name="expirationDate" placeholder="YYYY-MM-DD" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="price">Price</label>
-                                                    <input type="text" class="form-control" name="price" placeholder="Price" required>
+                                                    <label for="price">Discount</label>
+                                                    <input type="number" class="form-control" name="price" placeholder="Discount" required>
                                                 </div>
                                                 <div class="row">
                                                     <button type="submit" class="btn btn-primary" style="float: right;margin-right: 20px">Add Item</button>

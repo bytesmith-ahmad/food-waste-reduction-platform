@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class DataSource {
 
     private Connection connection = null;
-    private String url = "jdbc:mysql://localhost:3306/fwrp?zeroDateTimeBehavior=CONVERT_TO_NULL";
+    private String url = "jdbc:mysql://localhost:3306/fwrp?useSSL=false&allowPublicKeyRetrieval=true";
     private String username = "root";
     private String password = "root";
 

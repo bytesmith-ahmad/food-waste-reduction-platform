@@ -12,7 +12,7 @@ public class UserDaoImpl {
     public void addUser(User user) {
         String query = "INSERT INTO users (name, email, password, user_type) VALUES (?, ?, ?, ?)";
         try (Connection con = new DataSource().createConnection();
-             PreparedStatement pstmt = con.prepareStatement(query)) {
+            PreparedStatement pstmt = con.prepareStatement(query)) {
             pstmt.setString(1, user.getName());
             pstmt.setString(2, user.getEmail());
             pstmt.setString(3, user.getPassword());

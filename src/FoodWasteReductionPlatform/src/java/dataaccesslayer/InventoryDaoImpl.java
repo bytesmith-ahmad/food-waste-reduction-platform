@@ -12,14 +12,16 @@ import model.PurchasedInventory;
 public class InventoryDaoImpl {
 
     public void addInventoryItem(Inventory item) {
-        String sql = "INSERT INTO inventory (retail_id, item_name, quantity, expiration_date, price) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO inventory (retail_id, item_name, quantity, location, expiration_date, flagged, discount) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection con = new DataSource().createConnection();
              PreparedStatement pstmt = con.prepareStatement(sql)) {
-            pstmt.setInt(1, item.getRetailId());
+            pstmt.setInt(1, item.getRetailId()); //?
             pstmt.setString(2, item.getItemName());
             pstmt.setInt(3, item.getQuantity());
-            pstmt.setDate(4, new java.sql.Date(item.getExpirationDate().getTime()));
-            pstmt.setDouble(5, item.getPrice());
+            pstmt.setString(4, "Not implemented");
+            pstmt.setDate(5, new java.sql.Date(item.getExpirationDate().getTime()));
+            pstmt.setInt(6,0);
+            pstmt.setDouble(7, item.getPrice()); // Need refactor
             pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -54,7 +56,7 @@ public class InventoryDaoImpl {
 
     public List<Inventory> getInventoryByRetailer(int retailerId) {
         List<Inventory> inventory = new ArrayList<>();
-        String sql = "SELECT * FROM inventory_view WHERE retail_id = "+retailerId;
+        String sql = "SELECT * FROM inventory WHERE retail_id = "+retailerId;
         try (Connection con = new DataSource().createConnection();
              PreparedStatement pstmt = con.prepareStatement(sql);
              ResultSet rs = pstmt.executeQuery()) {
@@ -63,11 +65,10 @@ public class InventoryDaoImpl {
                 item.setId(rs.getInt("id"));
                 item.setItemName(rs.getString("item_name"));
                 item.setQuantity(rs.getInt("quantity"));
+                item.setLocation(rs.getString("location")); //TODO
                 item.setExpirationDate(rs.getDate("expiration_date"));
-                item.setFlagged(rs.getBoolean("flagged_surplus"));
-                item.setDonationFlag(rs.getBoolean("flagged_donation"));
-                item.setPrice(rs.getDouble("price"));
-                item.setDiscount(rs.getDouble("applied_discount"));
+                item.setFlagged(rs.getInt("flagged"));
+                item.setDiscount(rs.getInt("discount"));
                 inventory.add(item);
             }
         } catch (SQLException e) {
