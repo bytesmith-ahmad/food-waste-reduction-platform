@@ -79,7 +79,7 @@ public class InventoryDaoImpl {
 
     public List<Inventory> getInventoryForOrg() {
         List<Inventory> inventory = new ArrayList<>();
-        String sql = "SELECT * FROM inventory_view WHERE flagged_donation = 1;";
+        String sql = "SELECT * FROM inventory WHERE discount = 100;";
         try (Connection con = new DataSource().createConnection();
              PreparedStatement pstmt = con.prepareStatement(sql);
              ResultSet rs = pstmt.executeQuery()) {
@@ -101,25 +101,25 @@ public class InventoryDaoImpl {
     }
     
     
-    public List<ClaimedInventory> getClaimedItems(int orgId) {
-        List<ClaimedInventory> inventory = new ArrayList<>();
-        String sql = "SELECT i.id,i.item_name,i.quantity,c.claim_date FROM inventory i join claimed_food c on i.id=c.inventory_id where c.charitable_org_id="+orgId;
-        try (Connection con = new DataSource().createConnection();
-             PreparedStatement pstmt = con.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
-            while (rs.next()) {
-                ClaimedInventory item = new ClaimedInventory();
-                item.setId(rs.getInt("id"));
-                item.setItemName(rs.getString("item_name"));
-                item.setQuantity(rs.getInt("quantity"));
-                item.setClaim_date(rs.getString("claim_date"));
-                inventory.add(item);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return inventory;
-    }
+//    public List<ClaimedInventory> getClaimedItems(int orgId) {
+//        List<ClaimedInventory> inventory = new ArrayList<>();
+//        String sql = "SELECT i.id,i.item_name,i.quantity,c.claim_date FROM inventory i join claimed_food c on i.id=c.inventory_id where c.charitable_org_id="+orgId;
+//        try (Connection con = new DataSource().createConnection();
+//             PreparedStatement pstmt = con.prepareStatement(sql);
+//             ResultSet rs = pstmt.executeQuery()) {
+//            while (rs.next()) {
+//                ClaimedInventory item = new ClaimedInventory();
+//                item.setId(rs.getInt("id"));
+//                item.setItemName(rs.getString("item_name"));
+//                item.setQuantity(rs.getInt("quantity"));
+//                item.setClaim_date(rs.getString("claim_date"));
+//                inventory.add(item);
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return inventory;
+//    }
     
     
     public List<PurchasedInventory> getPurchasedItems(int consumerId) {

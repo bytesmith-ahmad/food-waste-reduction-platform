@@ -1,0 +1,13 @@
+use fwrp;
+
+select * from users;
+select * from inventory;
+select* from subscriptions;
+
+select * from authors;
+
+use books;
+
+insert into authors (firstName,lastName) values ('x','x')
+
+desc inventory;
