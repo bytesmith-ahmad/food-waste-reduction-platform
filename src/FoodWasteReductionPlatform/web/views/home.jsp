@@ -99,7 +99,9 @@
                                             <h3 class="panel-title"><span class="glyphicon glyphicon-th"></span> Inventory</h3>
                                         </div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn btn-primary panel-right" data-toggle="modal" data-target="#addInventoryModal"> <span class="glyphicon glyphicon-plus"></span> Add New</button>
+                                                 <% if (userType.equalsIgnoreCase("retailer")) { %>
+                                                    <button type="button" class="btn btn-primary panel-right" data-toggle="modal" data-target="#addInventoryModal"> <span class="glyphicon glyphicon-plus"></span> Add New</button>
+                                                 <% } %>
                                         </div>
                                     </div>
                                 </div>
@@ -115,10 +117,10 @@
                                             <tr>
                                                 <th>Item</th>
                                                 <th>Quantity</th>
-                                                <th>Location</th>
                                                 <th>Expiration Date</th>
+                                                <th>Price</th>
                                                  <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
-                                                    <th>Discount (%)</th>
+                                                    <th>Discounted Price</th>
                                                  <% } %>
                                                  <% if (userType.equalsIgnoreCase("retailer")) { %>
                                                     <th>Flagged For Surplus</th>
@@ -148,27 +150,27 @@
                                                         <button type="button" class="btn btn-success btn-xs" onclick="showAddQuantityModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span></button>     
                                                     </span>
                                                 </td>
-                                                <td><%= item.getLocation()%></td>
                                                 <td class="<%= expiresInAweek ? "near-expiry-item" : "" %>"><%= item.getExpirationDate()%></td>
-                                                <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
-                                                    <td><%= item.getDiscount()%></td>
-                                                <% } %>
-                                                <% if (userType.equalsIgnoreCase("retailer")) { %>
-                                                    <td><%= item.getFlagged() == 1 ? "Yes" : "" %></td>
-                                                    <td><%= (item.getDiscount() == 100 && expiresInAweek) ? "Yes" : "" %></td>
-                                                <% } %>
+                                                <td><%= item.getPrice()%></td>
+                                                 <% if (userType.equalsIgnoreCase("retailer") || userType.equalsIgnoreCase("consumer")) { %>
+                                                    <td><%= item.getDiscount() !=0 ? item.getPrice() - item.getDiscount() : "" %></td>
+                                                 <% } %>
+                                                 <% if (userType.equalsIgnoreCase("retailer")) { %>
+                                                    <td><%= item.isFlagged() ? "Yes" : "" %></td>
+                                                    <td><%= item.isDonationFlag()? "Yes" : "" %></td>
+                                                 <% } %>
                                                 <td>
+                                                    
                                                     <% if (userType.equalsIgnoreCase("retailer")) { %>
-                                                        <% if (item.getFlagged() != 1) { %>
-                                                            <button type="button" class="btn btn-info btn-xs" onclick="toggleFlag(<%= item.getId()%>, 1)">Mark as Surplus</button>
-                                                        <% } else { %>
-                                                            <button type="button" class="btn btn-warning btn-xs" onclick="toggleFlag(<%= item.getId()%>, 0)">Remove Surplus</button>
+                                                        <% if (!item.isFlagged()) { %>
+                                                        <button type="button" class="btn btn-info btn-xs" onclick="showMarkSurplusModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Mark as surplus</button>
+                                                        <% } else{ %>
+                                                        <button type="button" class="btn btn-warning btn-xs" onclick="showAddDiscountModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-usd"></span> Add Discount</button>
+                                                        <button type="button" class="btn btn-danger btn-xs" onclick="showAddDonationModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-flag"></span> Flag for Donation</button>
                                                         <% } %>
                                                     <% } else if (userType.equalsIgnoreCase("charitable_organization")) { %>
-                                                        <%-- If you need to show "Claim Item" action for charitable organizations --%>
                                                         <button type="button" class="btn btn-info btn-xs" onclick="showClaimDonationModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Claim Item</button>
-                                                    <% } else { %>
-                                                        <%-- If you need to show "Purchase Item" action for other user types --%>
+                                                    <% } else{ %>
                                                         <button type="button" class="btn btn-info btn-xs" onclick="showPurchaseItemModal(<%= item.getId()%>,'<%= item.getItemName()%>')"> <span class="glyphicon glyphicon-plus"></span> Purchase Item</button>
                                                     <% }  %>
                                                 </td>
@@ -340,16 +342,12 @@
                                                     <input type="number" class="form-control" name="quantity" placeholder="Quantity" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="location">Location</label>
-                                                    <input type="text" class="form-control" name="location" placeholder="Location" required>
-                                                </div>
-                                                <div class="form-group">
                                                     <label for="expirationDate">Expiration Date</label>
                                                     <input type="date" class="form-control" name="expirationDate" placeholder="YYYY-MM-DD" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="price">Discount</label>
-                                                    <input type="number" class="form-control" name="price" placeholder="Discount" required>
+                                                    <label for="price">Price</label>
+                                                    <input type="text" class="form-control" name="price" placeholder="Price" required>
                                                 </div>
                                                 <div class="row">
                                                     <button type="submit" class="btn btn-primary" style="float: right;margin-right: 20px">Add Item</button>
@@ -584,4 +582,7 @@
                             }
                         });
                         </script>
+
+
+
                     </html>

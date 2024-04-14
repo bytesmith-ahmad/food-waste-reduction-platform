@@ -44,10 +44,9 @@ public class InventoryServlet extends HttpServlet {
                 item.setRetailId(user.getId());
                 item.setItemName(request.getParameter("itemName"));
                 item.setQuantity(Integer.parseInt(request.getParameter("quantity")));
-                item.setLocation(request.getParameter("location"));
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 item.setExpirationDate(sdf.parse(request.getParameter("expirationDate")));
-                item.setDiscount(Integer.parseInt(request.getParameter("price")));
+                item.setPrice(Double.parseDouble(request.getParameter("price")));
                 inventoryBL.addInventoryItem(item);
                 request.getSession(false).setAttribute("success_msg", "Item added sucessfuly.");
                 response.sendRedirect("views/home.jsp"); // Redirect to the inventory management page

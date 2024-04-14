@@ -8,10 +8,11 @@ public class Inventory {
     private int retailId;
     private String itemName;
     private int quantity;
-    private String location;
     private Date expirationDate;
-    private int flagged;
-    private int discount;
+    private boolean flagged_surplus;
+    private boolean flagged_donation;
+    private double price;
+    private double discount;
 
     // Getters and Setters
     public int getId() {
@@ -54,27 +55,35 @@ public class Inventory {
         this.expirationDate = expirationDate;
     }
 
-    public int getFlagged() {
-        return this.flagged;
+    public boolean isFlagged() {
+        return flagged_surplus;
     }
 
-    public void setFlagged(int flagged_surplus) {
-        this.flagged = flagged_surplus;
+    public void setFlagged(boolean flagged_surplus) {
+        this.flagged_surplus = flagged_surplus;
     }
 
-    public int getDiscount() {
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(int discount) {
+    public void setDiscount(double discount) {
         this.discount = discount;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public boolean isDonationFlag() {
+        return flagged_donation;
     }
-    
-    public String getLocation(){
-        return this.location;
+
+    public void setDonationFlag(boolean flagged_donation) {
+        this.flagged_donation = flagged_donation;
     }
 }

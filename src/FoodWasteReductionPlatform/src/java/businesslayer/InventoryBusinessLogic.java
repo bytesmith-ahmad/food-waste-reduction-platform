@@ -31,7 +31,7 @@ public class InventoryBusinessLogic {
         }
     }
     public List<ClaimedInventory> getClaimedItems(int orgId) {
-        return null /*inventoryDao.getClaimedItems(orgId)*/;
+        return inventoryDao.getClaimedItems(orgId);
     }
     public List<PurchasedInventory> getPurchasedItems(int consumerId) {
         return inventoryDao.getPurchasedItems(consumerId);
